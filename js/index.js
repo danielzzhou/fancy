@@ -19,8 +19,8 @@
       document.body.appendChild(renderer.domElement);
 
       // Create a camera, zoom it out from the model a bit, and add it to the scene.
-      camera = new THREE.PerspectiveCamera(45, WIDTH / HEIGHT, 0.5, 20000);
-      camera.position.set(0,-5,10);
+      camera = new THREE.PerspectiveCamera(20, WIDTH / HEIGHT, 0.5, 20000);
+      camera.position.set(0,5,10);
       scene.add(camera);
 
       // Create an event listener that resizes the renderer with the browser window.
