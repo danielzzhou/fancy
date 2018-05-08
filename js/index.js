@@ -19,8 +19,8 @@
       document.body.appendChild(renderer.domElement);
 
       // Create a camera, zoom it out from the model a bit, and add it to the scene.
-      camera = new THREE.PerspectiveCamera(45, WIDTH / HEIGHT, 0.5, 20000);
-      camera.position.set(0,-5,10);
+      camera = new THREE.PerspectiveCamera(8, WIDTH / HEIGHT, 0.5, 20000);
+      camera.position.set(-52,15,-20);
       scene.add(camera);
 
       // Create an event listener that resizes the renderer with the browser window.
@@ -33,7 +33,7 @@
       });
 
       // Set the background color of the scene.
-      renderer.setClearColorHex(0xffffff, 1);
+      renderer.setClearColorHex(0xe4e4e4, 1);
 
       // Create a light, set its position, and add it to the scene.
       var light = new THREE.PointLight(0xffffff);
@@ -43,7 +43,7 @@
       // Load in the mesh and add it to the scene.
       var loader = new THREE.JSONLoader();
       loader.load( "models/money.js", function(geometry){
-        var material = new THREE.MeshLambertMaterial({color: 0x55B663});
+        var material = new THREE.MeshLambertMaterial({color: 0x229954 });
         mesh = new THREE.Mesh(geometry, material);
         scene.add(mesh);
       });
