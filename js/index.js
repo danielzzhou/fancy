@@ -33,7 +33,7 @@
       });
 
       // Set the background color of the scene.
-      renderer.setClearColorHex(0xe4e4e4, 1);
+      renderer.setClearColorHex(0xffffff, 1);
 
       // Create a light, set its position, and add it to the scene.
       var light = new THREE.PointLight(0xffffff);
